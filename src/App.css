@@ -1,14 +1,20 @@
+:root{
+  --bg-main: rgb(30, 30, 30);
+
+
+
+  --bg-temp-yellow: yellow;
+  --bg-temp-green: green;
+  --bg-temp-orange: orange;
+  --bg-temp-red: red;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: var(--bg-main);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,26 +24,14 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @font-face {
   font-family: 'avenirroman';
-  src: url('avenir_roman_12-webfont.woff2') format('woff2'),
-       url('avenir_roman_12-webfont.woff') format('woff');
+  src: url('./font/avenir_roman_12-webfont.woff2') format('woff2'),
+       url('./font/avenir_roman_12-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 
 /*font-family: 'avenirroman', sans-serif;*/
 
