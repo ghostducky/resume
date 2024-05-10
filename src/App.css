@@ -7,12 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +29,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: 'avenirroman';
+  src: url('avenir_roman_12-webfont.woff2') format('woff2'),
+       url('avenir_roman_12-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*font-family: 'avenirroman', sans-serif;*/
+
+body {
+  margin: 0;
+  font-family: 'avenirroman', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
