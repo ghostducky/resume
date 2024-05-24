@@ -1,0 +1,7 @@
+.peepee{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    max-height: 300px;
+    max-width: 100px;
+  }
