@@ -1,0 +1,76 @@
+/*--- --- FONT FOR WEBSITE --- ---*/
+@font-face {
+  font-family: 'avenirroman';
+  src: url('../font/avenir_roman_12-webfont.woff2') format('woff2'),
+       url('../font/avenir_roman_12-webfont.woff') format('woff');
+}
+/*--- --- SET FONT FOR EVERYTHING--- ---*/
+body {
+  overflow: hidden;
+  margin: 0;
+  font-family: 'avenirroman', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*--- --- SCROLLBAR SYLING --- ---*/
+::-webkit-scrollbar{
+  width: 10px;
+  background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb{
+  background: var(--sw-main);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: var(--sw-hover);
+}
+
+
+
+/*--- --- COLOURS --- ---*/
+:root{
+  --bg-main: rgb(30, 30, 30);
+  --p-text: rgb(212, 212, 212);
+
+  /*--- --- SCROLLWHEEL COLOURS --- ---*/
+  --sw-main: rgb(40,40,40);
+  --sw-hover: rgb(50,50,50);
+
+
+  --bg-temp-yellow: yellow;
+  --bg-temp-green: green;
+  --bg-temp-orange: orange;
+  --bg-temp-red: red;
+}
+
+
+/*--- --- MAIN WEBSITE --- ---*/
+.main {
+  background: var(--bg-main);
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+
+/* --- --- --- --- PROFILE --- --- --- ---*/
+@import '/src/css/profile.css'; /* WILL BE REPLACED WITH THE ACTUAL CSS LATER */
+/* --- --- --- --- CONTACT --- --- --- ---*/
+@import '/src/css/contact.css'; /* WILL BE REPLACED WITH THE ACTUAL CSS LATER */
+/* --- --- --- --- ABOUT ME --- --- --- ---*/
+@import '/src/css/aboutMe.css'; /* WILL BE REPLACED WITH THE ACTUAL CSS LATER */
+
+
+/*--- --- MOUSE BACKGROUND --- ---*/
+.blob{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.1s ease;
+}
