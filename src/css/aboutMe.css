@@ -1,7 +1,77 @@
-.peepee{
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: fixed;
-    max-height: 300px;
-    max-width: 100px;
-  }
+.info-section{
+  float: right;
+  width: 60%;
+}
+.selection-container{
+  position: absolute;
+  top: 10px;
+  right: 10%;
+  display: flex;
+  gap:20px
+}
+
+.container h4{
+  font-weight: 300;
+  text-align: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 150px;
+  height: 50px;
+  border: 1px solid var(--p-text);
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: 0.2s;
+}
+
+.container::before, .container::after {
+  position: absolute;
+  background: var(--bg-main);
+  z-index: -1;
+  transition: 0.5s;
+  content: '';
+}
+
+.container::before {
+  height: 50px;
+  width: 130px;
+}
+
+.container::after {
+  width: 150px;
+  height: 30px;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.container:hover::before {
+  width: 0px;
+  background: var(--bg-main);
+}
+
+.container:hover::after {
+  height: 0px;
+  background: var(--bg-main);
+}
+
+.container:hover {
+  background: var(--bg-main);
+}
