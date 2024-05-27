@@ -1,14 +1,12 @@
 .profileBg {
-    background: var(--bg-temp-green);
     top: 0;
     left: 50px;
     width: 300px;
     position: sticky
 }
 
-.occupation {
-    background: var(--bg-temp-orange);
-}
+/*.occupation {
+}*/
 
 .Ptext h1 {
     font-weight: 500;
