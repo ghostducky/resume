@@ -75,3 +75,8 @@
 .container:hover {
   background: var(--bg-main);
 }
+.mail-button{
+  cursor: pointer;
+  background: none;
+  border: none;
+}
