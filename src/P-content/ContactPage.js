@@ -1,8 +1,20 @@
 import React, { useState } from 'react';
+//import Modal from './Modal';
 import '../css/style.css';
 
 function ContactPage() {
   const [hoveredImage, setHoveredImage] = useState(null);
+  /*const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };*/
+
+
   return (
     <div className='img-container'>
       <div className='git-container'>
@@ -32,7 +44,7 @@ function ContactPage() {
         </a>
       </div>
       <div className='mail-container'>
-        <a>
+        <button className="mail-button" onClick={openModal} aria-label="Contact Me">
           <img
             className='mail-logo'
             src={hoveredImage === 'mail' ? '/images/mail-logo.png' : '/images/mail-logo-filtered.png'}
@@ -42,10 +54,23 @@ function ContactPage() {
             onMouseEnter={() => setHoveredImage('mail')}
             onMouseLeave={() => setHoveredImage(null)}
           />
-        </a>
+        </button>
       </div>
     </div>
   );
 }
-
+  /*<Modal isOpen={isModalOpen} onClose={closeModal}>
+    <h2>Contact Me</h2>
+    <p>Please send your email to onni.raappanao@gmail.com.</p>
+    <form className='mail-Form'>
+      <label for="email">Email:</label>
+      <input type="text" itemID="email" name="email" autocomplete="email" placeholder="example@gmail.com" required/>
+      <label for="name">Name:</label>
+      <input type="text" itemID="name" name="name" autocomplete="name" placeholder="Jack Meoff" required />
+      <label for="message">Message:</label>
+      <textarea itemID="message" name="message" rows="4" placeholder="Type your message here..." required />
+    </form>
+    <button itemID="send" className="send-button" type="button">SEND</button>
+    <p itemID='error-message' className="error-message">---</p>
+  </Modal>*/
 export default ContactPage;
