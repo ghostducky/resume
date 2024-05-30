@@ -62,7 +62,8 @@ body {
 @import '/src/css/contact.css'; /* WILL BE REPLACED WITH THE ACTUAL CSS LATER */
 /* --- --- --- --- ABOUT ME --- --- --- ---*/
 @import '/src/css/aboutMe.css'; /* WILL BE REPLACED WITH THE ACTUAL CSS LATER */
-
+/* --- --- --- --- MODAL --- --- --- ---*/
+@import '/src/css/modal.css'; /* WILL BE REPLACED WITH THE ACTUAL CSS LATER */
 
 /*--- --- MOUSE BACKGROUND --- ---*/
 .blob{
