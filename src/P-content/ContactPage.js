@@ -14,6 +14,8 @@ function ContactPage() {
     setIsModalOpen(false);
   };*/
 
+  const name = 'onni.raappanao';
+  const domain = 'gmail.com';
 
   return (
     <div className='img-container'>
@@ -44,7 +46,7 @@ function ContactPage() {
         </a>
       </div>
       <div className='mail-container'>
-        <button className="mail-button" onClick={openModal} aria-label="Contact Me">
+        <a href={`mailto:${name}@${domain}`}>
           <img
             className='mail-logo'
             src={hoveredImage === 'mail' ? '/images/mail-logo.png' : '/images/mail-logo-filtered.png'}
@@ -54,7 +56,7 @@ function ContactPage() {
             onMouseEnter={() => setHoveredImage('mail')}
             onMouseLeave={() => setHoveredImage(null)}
           />
-        </button>
+        </a>
       </div>
     </div>
   );
