@@ -1,20 +1,76 @@
-.profileBg {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .left-page {
+    position: relative;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .profileBg {
+    position: sticky;
     top: 0;
     left: 50px;
     width: 300px;
-    position: sticky
-}
+  }
 
-/*.occupation {
-}*/
+  .Ptext h1 {
+    font-weight: 100;
+  }
 
-.Ptext h1 {
-    font-weight: 500;
-}
-
-.Ptext {
+  .Ptext {
     font-weight: 100;
     font-style: normal;
     font-size: 20px;
     color: var(--p-text);
-}
+  }
+
+  .button-container {
+    width: 150px;
+    height: 50px;
+    border: 1px solid var(--p-text);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .selection-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 50px;
+    position: relative;
+    top: 10px;
+    left: 0;
+  }
+
+  .profile {
+    margin-top: 10%;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+
+  img {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  img:hover {
+    transform: scale(1.2);
+  }
+
+  .git-container,
+  .link-container,
+  .mail-container {
+    margin-bottom: 20px;
+  }
