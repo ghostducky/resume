@@ -35,18 +35,22 @@ body {
   /*--- --- SCROLLWHEEL COLOURS --- ---*/
   --sw-main: rgb(40,40,40);
   --sw-hover: rgb(50,50,50);
+
+  /*--- --- RIGHT SIDE BOX --- ---*/
+  --purple: rbga{199, 111, 233, 0.6}
 }
 
 /*--- --- MAIN WEBSITE --- ---*/
-.main {
+.home {
   background: var(--bg-main);
   height: 100vh;
+  width: 100vh;
   display: flex;
   color: white;
 }
 
-/* --- --- --- --- PROFILE --- --- --- ---*/
-@import '/src/css/profile.css';
+/* --- --- --- --- PAGE --- --- --- ---*/
+@import '/src/css/page.css';
 
 /* --- --- --- --- ABOUT ME --- --- --- ---*/
 @import '/src/css/aboutMe.css';

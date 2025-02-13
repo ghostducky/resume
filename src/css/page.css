@@ -1,0 +1,5 @@
+.main-page{
+    max-width: inherit;
+    max-height: inherit;
+    z-index: 10;
+}
